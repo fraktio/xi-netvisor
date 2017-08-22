@@ -59,7 +59,7 @@ class Netvisor extends \Zend_Rest_Client
         $this->config = $this->config ?: $this->getConfig();
 
         $this->client = new Client();
-        $this->client->setConfig(array('maxdirects' => 0, 'timeout' => 120, 'keepalive' => true));
+        $this->client->setConfig(array('maxdirects' => 0, 'timeout' => 600, 'keepalive' => true));
     }
     
     /**
